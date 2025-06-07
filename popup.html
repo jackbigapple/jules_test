@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Chat Exporter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>AI Chat Exporter</h1>
+
+  <div id="prompt-section">
+    <h2>Current Prompt</h2>
+    <div id="prompt-display-area">
+      <p id="prompt-placeholder">Loading prompt...</p>
+      <textarea id="prompt-text" readonly rows="5"></textarea>
+    </div>
+    <button id="save-prompt-button">Save Prompt</button>
+  </div>
+
+  <hr>
+
+  <div id="saved-prompts-section">
+    <h2>Saved Prompts</h2>
+    <button id="fetch-prompts-button">Load My Prompts</button>
+    <p id="prompts-loading-message" style="display:none;">Loading prompts...</p>
+    <ul id="saved-prompts-list">
+      <!-- Prompt items will be dynamically added here -->
+    </ul>
+    <p id="no-prompts-message" style="display:none;">No prompts saved yet. Or, you need to set your Supabase URL/Key in the extension's background script.</p>
+  </div>
+
+  <hr>
+
+  <h2>Full Conversation</h2>
+  <button id="exportBtn">Export Full Chat</button>
+
+  <div id="status-message-area"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
