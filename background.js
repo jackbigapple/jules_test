@@ -1,8 +1,8 @@
 console.log('Background script loaded for AI Chat Exporter.');
 
 // REMINDER: Replace with your actual Supabase project URL and anon key
-const SUPABASE_URL = 'YOUR_SUPABASE_URL_HERE'; // Should be replaced by user
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY_HERE'; // Should be replaced by user
+const SUPABASE_URL = 'https://gohtypptejpdvikigrhu.supabase.co'; // Should be replaced by user
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdvaHR5cHB0ZWpwZHZpa2lncmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkzNDc4MTAsImV4cCI6MjA2NDkyMzgxMH0.BL4EIRjgS30x9_TBMFM22NHSoznGl3n49n5x1fA2LJ8'; // Should be replaced by user
 
 import { createClient } from './lib/supabase-js.min.js'; // Ensure this path is correct
 
